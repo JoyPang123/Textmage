@@ -1,0 +1,14 @@
+{% if images != "none" %}
+    <div class="image-container img-responsive">
+        <img class="main-img" src="data:image/png;base64,{{ images[0] }}" id="current"
+             alt="Upload some images in the gallery">
+    </div>
+
+    <div class="gallery-grid">
+        {% for image in images %}
+            <figure class="gallery-frame">
+                <img class="gallery-img" src="data:image/png;base64,{{ image }}"/>
+            </figure>
+        {% endfor %}
+    </div>
+{% endif %}

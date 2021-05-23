@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'head-imports.html' %}
+</head>
+
+<body>
+<header>
+{%  include 'navbar.html' %}
+</header>
+<section class="container" id="content">
+    {% include 'gallery.html' %}
+</section>
+    
+<script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+{%  include 'footer.html' %}
+</body>
+</html>

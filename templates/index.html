@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include 'head-imports.html' %}
+    </head>
+
+    <body>
+        <header>
+            {%  include 'navbar.html' %}
+            <div class="jumbotron jumbotron-fluid bg-dark">
+                <div class="jumbotron-background">
+                    <img src="{{ url_for('static', filename='image/cover.jpg') }}" class="blur ">
+                </div>
+                <div class="container text-white">
+                    <h1 class="display-4">Give it a try!</h1>
+                    <p class="lead">This is a text to image generator, try to type a sentence and pick up images that you like!</p>
+                    <hr class="my-4">
+                    <form action="/generate" method="post">
+                        <div class="mb-3">
+                            <label for="tokens" class="form-label">Token</label>
+                            <input type="password" class="form-control" id="tokens" required="required" name="tokens">
+                        </div>
+                        <div class="mb-3">
+                            <label for="text" class="form-label">Text</label>
+                            <input type="text" id="text" required="required" name="text" class="form-control">
+                        </div>
+                        <button type="submit" id="img-generate" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <!-- /.container -->
+            </div>
+        </header>
+
+        <div id="loadingImage" style="display:none;">
+            <p> Sorry for waiting</p>
+            <p> Please support us to update our hardware!</p>
+        </div>
+        <section class="container" id="content" style="display: {{ show_gallery }};">
+            {% include 'gallery.html' %}
+        </section>
+
+        <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+        {% include 'footer.html' %}
+    </body>
+</html>

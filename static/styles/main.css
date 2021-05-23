@@ -1,0 +1,134 @@
+
+section.container {
+    max-width: 1024px;
+}
+
+.main-img {
+    height: 200%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    object-position: top 75%;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* The alert message box */
+.alert {
+    margin-top: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    font-weight: bold;
+    color: #52734d;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* The Picture Frame */
+.gallery-frame {
+    padding: .2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #333;
+    color: #d9d9d9;
+}
+
+/* The Images */
+.gallery-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.gallery-img:hover {
+    opacity: .7;
+}
+
+@media (max-width: 767px) {
+    .btn-disabled {
+        width: 150px;
+    }
+
+    .btn-block {
+        display: block;
+        width: 220px;
+        margin: 0 auto;
+    }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.jumbotron-background {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+img.blur {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+}
+
+#nav_bar .active {
+    color: #F8F8F8;
+    background-color: #4f81bd;
+    font-weight: bolder;
+}

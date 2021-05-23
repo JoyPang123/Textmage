@@ -1,0 +1,13 @@
+Flask~=2.0.1
+tqdm~=4.60.0
+requests~=2.24.0
+beautifulsoup4~=4.9.3
+dalle_pytorch~=0.12.0
+einops~=0.3.0
+flask_mail~=0.9.1
+Pillow~=8.2.0
+pycocotools~=2.0.2
+python-dotenv~=0.17.1
+torch~=1.8.1
+torchvision~=0.9.1
+wandb~=0.10.30
