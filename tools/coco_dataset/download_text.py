@@ -14,7 +14,7 @@ arg_p = argparse.ArgumentParser()
 arg_p.add_argument("-c", "--coco",
                    type=str,
                    default=".",
-                   help="Place for the coco json files")
+                   help="Root dir for the coco json files")
 arg_p.add_argument("-d", "--download",
                    type=str,
                    default="false",

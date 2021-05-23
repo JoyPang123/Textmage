@@ -16,10 +16,10 @@ log.addHandler(handler)
 
 # Parse the argument for user specification files
 parser = argparse.ArgumentParser()
-parser.add_argument("-w", "--website",
+parser.add_argument("-t", "--txt",
                     type=str,
                     required=True,
-                    help="Website file for downloading a pack of icons")
+                    help="Text file for downloading a pack of icons")
 parser.add_argument("-o", "--output",
                     type=str,
                     required=True,
@@ -37,7 +37,7 @@ headers = {
 }
 
 # Save the category files
-buffer_information = open(args.website, "r").readlines()
+buffer_information = open(args.txt, "r").readlines()
 
 for cur_information in buffer_information:
     # Remove "\n"
@@ -51,8 +51,8 @@ for cur_information in buffer_information:
         sys.exit()
 
     count = 0
-   
-   
+
+
     # Get the html and parse the tags
     response = requests.get(f"{cur_website}",
                             headers=headers)
