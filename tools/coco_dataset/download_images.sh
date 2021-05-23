@@ -8,6 +8,6 @@ wget --directory-prefix=downloads http://images.cocodataset.org/annotations/anno
 # Unpack everything
 mkdir -p dataset/images
 mkdir -p dataset/annotations
-unzip downloads/train2017.zip -d dataset/images/
-unzip downloads/val2017.zip -d dataset/images/
-unzip downloads/annotations_trainval2017.zip -d dataset/annotations/
+unzip -q downloads/train2017.zip -d dataset/images/
+unzip -q downloads/val2017.zip -d dataset/images/
+unzip -q downloads/annotations_trainval2017.zip -d dataset/annotations/
