@@ -25,7 +25,7 @@ Phil Wang](https://github.com/lucidrains) repository - [DALLE-pytorch](https://g
     ```shell
     $ cd Textmage
     $ gdown https://drive.google.com/uc?id=1sRinsRKxKaWHhRJ3ayT60BTHDANTQuQg
-    $ unzip -q weight.zip
+    $ unzip -q weight.zip && rm weight.zip
     ```
 5. Deploy
     ```shell
