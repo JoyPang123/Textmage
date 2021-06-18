@@ -11,3 +11,4 @@ python-dotenv~=0.17.1
 torch~=1.8.1
 torchvision~=0.9.1
 wandb~=0.10.30
+gdown~=3.13.0
