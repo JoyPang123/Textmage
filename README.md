@@ -20,7 +20,7 @@ Phil Wang](https://github.com/lucidrains) repository - [DALLE-pytorch](https://g
     $ pip install -r requirements.txt
     ```
     Used package are shown [here](https://github.com/JoyPang123/Textmage/blob/main/requirements.txt).
-3. Download the pretrained weight
+3. Download the pretrained weight  
     Users can download the weight from [here](https://drive.google.com/file/d/1sRinsRKxKaWHhRJ3ayT60BTHDANTQuQg/view?usp=sharing). Or using `gdown` to download the file (recommend). Download file should be placed in the **root** of the project folder.
     ```shell
     $ cd Textmage
