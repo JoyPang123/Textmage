@@ -78,7 +78,7 @@ $ python download_text.py \
 ```
 
 ### Icon
-> Warning: The icon would be downloaded from the [flaticon](https://www.flaticon.com). Please follow their rules to avoid any legal dispute. In our examples and our project, we only download their free icons
+> Warning: The icon were downloaded from the [flaticon](https://www.flaticon.com). Please follow their rules to avoid any legal dispute. In our examples and our project, we only download their free icons
 
 
 Users can first find the [icon packs](https://www.flaticon.com/packs) you like and copy the **url** into `tools/crawler/categories.txt` and use `,` to seperate text. For example, I downloaded cat icons and expect all the icons to be labeled to `cat`:
